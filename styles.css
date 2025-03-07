@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+
+/* box-sizing review*/
+.circle {
+    height: 190px;
+    width: 190px;
+    border: 25px solid green;
+    border-radius: 50%;
+    box-sizing: border-box; 
+
+}
+
+.x {
+    height: 190px;
+    width: 190px;
+    position: relative;
+    transform: rotate(45deg);
+}
+
+.x:before, .x:after {
+    content: "";
+    position: absolute;
+    background-color: red;
+}
+
+.x:before {
+    left: 50%;
+    width: 30%;
+    margin-left: -15%;
+    height: 100%;
+
+}
+
+.x:after {
+    top: 50%;
+    height: 30%;
+    margin-top: -15%;
+    width: 100%;
+}
+
+#gameboard {
+    width: 600px;
+    height: 600px;
+    background-color: black;
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 1px black;
+
+}
+
+.square {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border: solid 6px black;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
